@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Fretes ANTT - A Solução Definitiva</title>
+    <meta name="description" content="Integre o cálculo da Tabela de Frete Mínimo da ANTT em seus sistemas ou planilhas Excel. A partir de R$ 30/mês.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+    
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <i data-lucide="truck"></i>
+                <span>API de Fretes <strong>ANTT</strong></span>
+            </div>
+            <a href="https://wa.me/5547999891503" target="_blank" class="btn btn-outline" id="nav-cta">Falar com Consultor</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <div class="badge">Aprovado por Operadores Logísticos 🚛</div>
+                <h1>Compliance <span>Automático</span> no Cálculo de Frete</h1>
+                <p>A solução definitiva para <strong>embarcadores e transportadores</strong> com alto volume de rotas. Elimine multas e defasagem de tabela interligando validadores de frete mínimo da ANTT direto nos seus processos sistêmicos.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="window.open('https://wa.me/5547999891503', '_blank')">
+                        <i data-lucide="message-circle"></i> Assinar Agora
+                    </button>
+                    <a href="#solucoes" class="btn btn-secondary">Por que automatizar?</a>
+                </div>
+                <div class="pricing-hint">
+                    Planos flexíveis a partir de <strong>R$ 30/mês</strong>.
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card mockup-card">
+                    <div class="mockup-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="mockup-title">Validador de TMS (API)</span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="code-line"><span>POST</span> /api/v1/validar-frete</div>
+                        <div class="code-line">{ "origem": "SP", "destino": "PR", "eixos": 6...</div>
+                        <br>
+                        <div class="response-line success">200 OK</div>
+                        <div class="response-line">{</div>
+                        <div class="response-line indent">"status": "APROVADO",</div>
+                        <div class="response-line indent">"valor_piso": 3215.80,</div>
+                        <div class="response-line indent">"tabela_referencia": "Res. 6031/23"</div>
+                        <div class="response-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solucoes" class="features container">
+            <div class="section-header">
+                <h2>Dores que eliminamos da sua operação</h2>
+                <p class="section-subtitle">Para quem lida com dezenas de tipos de operação e não tem tempo para atualizar planilhas a cada nova resolução da ANTT.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon alert-icon"><i data-lucide="shield-alert"></i></div>
+                    <h3>Fim da Defasagem de Tabela</h3>
+                    <p>Tabelas da ANTT mudam frequentemente. Nossa API reflete os reajustes em tempo real, evitando que você feche fretes fora do piso mínimo e sofra com passivos.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon check-icon"><i data-lucide="check-square"></i></div>
+                    <h3>Validadores Sistêmicos</h3>
+                    <p>Crie travas no seu ERP/TMS. O sistema simplesmente bloqueia a emissão de CT-e ou o pagamento se estiver abaixo da tabela, matando a conferência manual.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon fast-icon"><i data-lucide="bar-chart-3"></i></div>
+                    <h3>Escala de Alto Volume</h3>
+                    <p>Transporta para o Brasil todo? Nossa infraestrutura calcula milhares de rotas, combinações de carga e eixos em frações de segundo sem gargalos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="integration container">
+            <div class="integration-wrapper glass-card">
+                <h2>Como você prefere consumir?</h2>
+                <div class="features-grid inner-grid">
+                    <div class="feature-card minimal">
+                        <div class="feature-icon excel-icon"><i data-lucide="file-spreadsheet"></i></div>
+                        <h3>Uso Direto no Excel</h3>
+                        <p>Fórmulas prontas para calcular lotes de frete nas suas planilhas de cotação.</p>
+                    </div>
+                    <div class="feature-card minimal">
+                        <div class="feature-icon api-icon"><i data-lucide="code-2"></i></div>
+                        <h3>Integração API RESTful</h3>
+                        <p>Rotas perfeitamente documentadas para o seu setor de T.I. plugar aos sistemas.</p>
+                    </div>
+                    <div class="feature-card minimal">
+                        <div class="feature-icon service-icon"><i data-lucide="settings"></i></div>
+                        <h3>Implantação Dedicada</h3>
+                        <p>Contrate nossos engenheiros à parte para fazer a integração completa no seu software.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section container glass-card">
+            <div class="cta-content">
+                <h2>Pronto para otimizar seus fretes?</h2>
+                <p>Nossos valores são variáveis por faixa de utilização, desenhados para caber no seu orçamento e escalar junto com a sua empresa.</p>
+                <a href="https://wa.me/5547999891503" target="_blank" class="btn btn-primary btn-large">
+                    <i data-lucide="message-circle"></i> Falar no WhatsApp: (47) 99989-1503
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>API de Fretes ANTT</h3>
+                <p>Uma solução comercial completa e atualizada para conformidade logística.</p>
+            </div>
+            <div class="footer-meta">
+                <p class="developer">Desenvolvido por <a href="https://htce.com.br" target="_blank">HTCE.Tech</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
